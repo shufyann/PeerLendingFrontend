@@ -1,0 +1,36 @@
+﻿@* Views/Lender/Dashboard.cshtml *@
+
+@{
+    ViewData["Title"] = "Lender Dashboard";
+}
+
+<h1>Lender Dashboard</h1>
+
+<nav>
+    <ul>
+        <li><a href="#" id="accountMenu">Account</a></li>
+    </ul>
+</nav>
+
+<div id="accountDetails"></div>
+
+<!-- Tombol untuk menampilkan modal -->
+<button id="getBalanceButton">Get Balance</button>
+
+<!-- Modal -->
+<div class="modal fade" id="balanceModal" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="balance"></div>
+            <button id="updateBalanceButton">Update Balance</button>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    <script src="~/js/lenderDashboard.js"></script>
+}
+
